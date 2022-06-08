@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source       = { :git => "https://github.com/KoujiShoho/IndoorKit.git", :tag => "1.0.2" }
-  spec.source = { :http => 'https://drive.google.com/uc?export=download&id=1PqGjXMUvF5KSMlFvn56MR7PRjypHqcgs' }
+  spec.source = { :http => 'https://github.com/KoujiShoho/IndoorKitFramework/archive/refs/heads/main.zip' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

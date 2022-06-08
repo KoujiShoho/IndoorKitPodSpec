@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   #
 
   #  spec.license      = "MIT"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = { :type => "MIT", :file => "IndoorKitFramework-main/LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
-  spec.ios.vendored_frameworks = 'IndoorKit.framework'
+  spec.ios.vendored_frameworks = 'IndoorKitFramework-main/IndoorKit.framework'
   spec.ios.deployment_target = "10.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"

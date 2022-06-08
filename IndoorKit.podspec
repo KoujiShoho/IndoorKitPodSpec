@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   #
 
   #  spec.license      = "MIT"
-  spec.license      = { :type => "MIT", :file => "IndoorKit/LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
-  spec.ios.vendored_frameworks = 'IndoorKit/IndoorKit.framework'
+  spec.ios.vendored_frameworks = 'IndoorKit.framework'
   spec.ios.deployment_target = "10.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source       = { :git => "https://github.com/KoujiShoho/IndoorKit.git", :tag => "1.0.2" }
-  spec.source = { :http => 'https://drive.google.com/uc?export=download&id=1iFvLz0U9XTdAqGyyUvfFm0G_3JVlOMYW' }
+  spec.source = { :http => 'https://drive.google.com/uc?export=download&id=1PqGjXMUvF5KSMlFvn56MR7PRjypHqcgs' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -138,5 +138,10 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+
+  spec.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
